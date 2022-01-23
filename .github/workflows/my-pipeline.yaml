@@ -18,7 +18,7 @@ jobs:
     - name: Find tabs in changed files
       run: |
         for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-          grep -P "\t" $file > report.log 2>&1
+          grep -P "\t" $file > report.log 2>>&1
         done
 
     - name: Upload report
