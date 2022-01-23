@@ -2,3 +2,4 @@ text
 	text
 text1
 	text1
+	new line
